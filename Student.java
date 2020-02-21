@@ -1,26 +1,27 @@
+//5.      Write a program to accept a student’s name and three marks. Display the total and average. Display result as First class, Second class, Pass class and Fails.
+
 import java.util.Scanner;
-public class Student {
-
-	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);
-		String name=s.nextLine();
-		System.out.println("name of the student:");
-		System.out.println("enter the no of subjects:");
-		int a[]=new int[5];
-		int tot=0;
-		for(int i=0;i<a.length;i++)
-		{
-			System.out.println("enter the no of subject"+(i+1)+".");
-			a[i]=s.nextInt();
-			tot=tot+a[i];
-		}
-		System.out.println("Student Name\t"+name);
-		for(int i=0;i<a.length;i++)
-		{
-			System.out.println("Marks in sub"+(i+1)+"are\t;"+a[i]);
-		}
-		System.out.println("Total\t;"+tot);
-
-	}
-
+class Student{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+String Name=s.nextLine();
+int a=s.nextInt();
+int b=s.nextInt();
+int c=s.nextInt();
+int total=a+b+c;
+int avg=total/3;
+if((avg>=75)&&(avg<=100))
+{
+System.out.println("First Class");
+}else if((avg>=60)&&(avg<75))
+{
+System.out.println("Second Class");
+}else if((avg>=40)&&(avg<60))
+{
+System.out.println("Pass");
+}else if(avg<40)
+{
+System.out.println("Fail");
+}
+}
 }

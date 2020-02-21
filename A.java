@@ -1,29 +1,20 @@
-
-public class A {
-	int x;
-	int y;
-	int get(int p,int q)
-	{
-		x=p;
-		y=q;
-		return(0);
-	}
-	void Show() {
-		System.out.println(x);
-	}
-
-}
-class B extends A{
-	public static void main(String[] args) {
-		B a=new B();
-		a.get(5,6);
-		a.Show();
-		
-		}
-
-void Show() 
+*/public class A
 {
-	super.Show();
-	System.out.println(y);
+public static void main(String[] args)
+{
+System.out.println("welcome");
+main("HI");
 }
+public static void main(String args)
+{
+System.out.println("rajeev");
+}
+}*/
+class Demo
+{
+public static void main(String[] args)
+{
+a=10,b=2;
+}
+System.out.println(a>b);
 }
